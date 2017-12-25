@@ -28,8 +28,6 @@
 </code></p>
 
 <p><code>    implementation 'com.android.support:design:27.0.2'</code>
-      
-  <code><code>  implementation 'com.android.support:design:27.0.2'</code>
-    
-apply plugin: 'com.google.gms.google-services'</code>
+  <code>implementation 'com.android.support:design:27.0.2'</code>
+    <code>apply plugin: 'com.google.gms.google-services'</code>
 </p>
