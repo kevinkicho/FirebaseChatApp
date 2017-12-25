@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kevin.myfirebasechatapp122317.SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@id/settings_circle_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <TextView
+        android:id="@+id/textview_settings_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Name"
+        android:textSize="24dp"
+        android:layout_below="@+id/settings_circle_image_view"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/textview_settings_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi, You are using IST Chat"
+        android:textSize="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/textview_settings_display_name"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btn_settings_change_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHANGE IMAGE"
+        android:layout_below="@id/textview_settings_message"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:theme="@style/PrimaryFlatButton"/>
+
+    <Button
+        android:id="@+id/btn_settings_change_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHANGE STATUS"
+        android:layout_below="@id/btn_settings_change_image"
+        android:layout_centerInParent="true"
+        android:theme="@style/PrimaryFlatButton"/>
+
+</RelativeLayout>

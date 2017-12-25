@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/status_appbar"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/edittext_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_appbar">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Status"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_status_text_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHANGE STATUS"
+        android:layout_below="@+id/edittext_status"
+        android:theme="@style/PrimaryFlatButton"/>
+
+</RelativeLayout>

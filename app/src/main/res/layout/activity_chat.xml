@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kevin.myfirebasechatapp122317.ChatActivity">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/chat_app_bar"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chat_app_bar"
+        android:layout_above="@+id/chat_linear_layout">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyler_view_messages_list"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_linear_layout">
+        <ImageButton
+            android:id="@+id/btn_chat_add_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_add_black_24px"
+            android:theme="@style/PrimaryFlatButton"/>
+        <EditText
+            android:id="@+id/edit_text_chat_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Enter Message"
+            android:textSize="18dp"
+            android:layout_marginTop="8dp"/>
+        <ImageButton
+            android:id="@+id/btn_chat_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_send_black_24px"
+            android:theme="@style/PrimaryFlatButton"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

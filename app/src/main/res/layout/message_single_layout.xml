@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:id="@+id/circle_image_View_list_item_message_profile_pic"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/text_view_display_name_of_chat"
+        android:layout_marginTop="8dp"
+        android:text="Message Text"
+        android:layout_toRightOf="@+id/circle_image_View_list_item_message_profile_pic"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_list_item_message"
+        android:layout_toRightOf="@+id/circle_image_View_list_item_message_profile_pic"
+        android:text="Message"
+        android:padding="4dp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="12dp"
+        android:layout_below="@+id/text_view_display_name_of_chat"/>
+    <TextView
+        android:id="@+id/text_view_time_of_chat"
+        android:text="00:00"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="12dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_view_display_name_of_chat"/>
+
+</RelativeLayout>
