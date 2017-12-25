@@ -6,7 +6,7 @@
   <li>Account Setting: Profile Image Setting, Status Text Update</li>
   <li>Friend Request: Send/Decline/Unfriend</li>
   </ul>
-  Firebase Console provides services needed to establish connection from this application to the user.
+  Firebase Console provides services needed to establish connection from this application.
   </p>
     
 <h3>Push Notifications</h3>
